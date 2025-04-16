@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CoordinateInputDialogBase</class>
+ <widget class="QDialog" name="CoordinateInputDialogBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>720</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string translatable="yes">Coordinate Input</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+  
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayoutPoint">
+     <item>
+      <widget class="QLabel" name="outputLabelPoint">
+       <property name="text">
+        <string translatable="yes">Point Output File</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="outputPathLineEdit">
+       <property name="text">
+        <string translatable="yes">Temporary Point File</string>
+       </property>
+       <property name="minimumWidth">
+        <number>480</number>
+       </property>
+       <property name="maximumWidth">
+        <number>480</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="browseButton">
+       <property name="text">
+        <string translatable="yes">Browse</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayoutLine">
+     <item>
+      <widget class="QLabel" name="outputLabelLine">
+       <property name="text">
+        <string translatable="yes">Line Output File</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="outputPathLineEditLine">
+       <property name="text">
+        <string translatable="yes">Temporary Line File</string>
+       </property>
+       <property name="minimumWidth">
+        <number>480</number>
+       </property>
+       <property name="maximumWidth">
+        <number>480</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="browseButtonLine">
+       <property name="text">
+        <string translatable="yes">Browse</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayoutPolygon">
+     <item>
+      <widget class="QLabel" name="outputLabelPolygon">
+       <property name="text">
+        <string translatable="yes">Polygon Output File</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="outputPathLineEditPolygon">
+       <property name="text">
+        <string translatable="yes">Temporary Polygon File</string>
+       </property>
+       <property name="minimumWidth">
+        <number>480</number>
+       </property>
+       <property name="maximumWidth">
+        <number>480</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="browseButtonPolygon">
+       <property name="text">
+        <string translatable="yes">Browse</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   
+   <item>
+    <widget class="QTableWidget" name="coordinateTableWidget">
+     <property name="columnCount">
+      <number>6</number>
+     </property>
+     <property name="rowCount">
+      <number>10</number>
+     </property>
+     <column>
+      <property name="text">
+       <string translatable="yes">Vertex</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string translatable="yes">X / E (lon)</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string translatable="yes">Y / N (lat)</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string translatable="yes">Z (alt)</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string translatable="yes">Boundary</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string translatable="yes">Feature ID</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayoutAddRemove">
+     <item>
+      <widget class="QPushButton" name="addRowButton">
+       <property name="text">
+        <string translatable="yes">+</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="removeRowButton">
+       <property name="text">
+        <string translatable="yes">-</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="moveUpButton">
+       <property name="text">
+        <string translatable="yes">↑</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="moveDownButton">
+       <property name="text">
+        <string translatable="yes">↓</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayoutImportExport">
+     <item>
+      <widget class="QPushButton" name="importButton">
+       <property name="text">
+        <string translatable="yes">Import from .txt</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="exportButton">
+       <property name="text">
+        <string translatable="yes">Export to .txt</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="importGeometryButton">
+       <property name="text">
+        <string translatable="yes">Import from Geometry</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayoutProcess">
+     <item>
+      <widget class="QPushButton" name="processButton">
+       <property name="text">
+        <string translatable="yes">Process Points</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="processLineButton">
+       <property name="text">
+        <string translatable="yes">Process Lines</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="processPolygonButton">
+       <property name="text">
+        <string translatable="yes">Process Polygon</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

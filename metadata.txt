@@ -1,0 +1,15 @@
+[general]
+name=CoordinateInput
+qgisMinimumVersion=3.0
+author=João Ubaldo
+email=joao@brafor.com.br
+description=Create point, line, and polygon layers from coordinates in UTM, Decimal Degrees, or DMS formats.
+about=CoordinateInput is a powerful QGIS plugin that allows users to generate shapefiles or temporary layers from manually entered or imported coordinates. It supports UTM, decimal degrees, and DMS formats (e.g., -15:50:50.000), enabling efficient import/export through text files and enhancing geospatial workflows.
+version=1.0
+icon=icon.png
+category=Vector
+tags=coordinate,input,shapefile,vector,geometry,UTM,DMS,mapping,cartography,spatial,surveying
+license=MIT
+homepage=https://github.com/joaobrafor/CoordinateInput
+tracker=https://github.com/joaobrafor/CoordinateInput/issues
+repository=https://github.com/joaobrafor/CoordinateInput
